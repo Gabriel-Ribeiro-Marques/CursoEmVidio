@@ -5,13 +5,10 @@ def Modnum(nome):
     
     nome = nome.lower()
     
-    quant = str(nome).count('a')
+    if str(nome).find('silva') == 0:
+        return print(True)
+    return print(False)
     
-    lfind = str(nome).find('a')
-    
-    rfind = str(nome).rfind('a')
-    
-    return print(f'QUANTOS A:{quant}, Posi_start:{lfind}, Posi_end:{rfind} {len(nome)}')
     
 
 Modnum(city)

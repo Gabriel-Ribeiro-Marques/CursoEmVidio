@@ -6,7 +6,7 @@ def Modnum(nome):
     
     Dezena = str(nome).lower()
     
-    quant = len(str(nome).strip())
+    quant = len(str(nome).strip())-str(nome).count(" ")
     
     fi = len(range(0, str(nome).find(' ')))
     
